@@ -1,0 +1,431 @@
+body {
+  background: #111;
+  font-weight: 300;
+}
+h1 {
+  text-align: center;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+}
+.logo{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  z-index: 3;
+}
+.wrapper {
+  display: none;
+}
+.subtitle{
+  font-size: 38px;
+}
+
+/* 1. Intro Keyframe
+--------------------------------------- */
+#intro {
+  position: fixed;
+  top: 45%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.name {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  transform: translate3d(0px, 0px, 0px) scale(1) rotate(0deg);
+  opacity: 1;
+}
+.byline { 
+  font-size: 15px;
+  letter-spacing: 10px;
+  text-align: center;
+  font-weight: 300;
+  transform: translate3d(0px, 0px, 0px) scale(1) rotate(0deg);
+  opacity: 1;
+}
+.ampersand {
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
+  font-style: italic;
+}
+
+/* 2. Explosion/Images/Links Structure and Text
+--------------------------------------- */
+#explosion,
+#images {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+.explosion-byline,
+.images-byline {
+  position: fixed;
+  top: 63%;
+  left: 10%;
+  color: white;
+  max-width: 32%;
+  opacity: 0;
+}
+.images-byline-2 {
+  text-align: center;
+  position: fixed;
+  top: 80%;
+  left: 25%;
+  color: white;
+  width: 50%;
+  opacity: 0;
+}
+
+/* 3. Explosion Keyframe
+--------------------------------------- */
+#domExplosionList {
+  position: fixed;
+  width: 270px;
+  top: 100%;
+  right: 18%;
+  opacity: 0;
+}
+.dom-explosion-item {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+}
+.dei-1  { top: 0;   left: 0;  }
+.dei-1 {
+  background-image: url('../img/activity/a11.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-2  { top: 0;   left: 100px; }
+.dei-2 {
+  background-image: url('../img/activity/a12.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-3  { top: 0;   left: 200px; }
+.dei-3 {
+  background-image: url('../img/activity/a13.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-4  { top: 0;   left: 300px; }
+.dei-4 {
+  background-image: url('../img/activity/a14.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-5  { top: 100px;   left: 0;  }
+.dei-5 {
+  background-image: url('../img/activity/a21.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-6  { top: 100px;   left: 100px; }
+.dei-6 {
+  background-image: url('../img/activity/a22.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-7  { top: 100px;   left: 200px; }
+.dei-7 {
+  background-image: url('../img/activity/a23.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-8  { top: 100px;   left: 300px; }
+.dei-8 {
+  background-image: url('../img/activity/a24.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-9  { top: 200px;   left: 0;  }
+.dei-9 {
+  background-image: url('../img/activity/a11.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-10 { top: 200px;   left: 100px; }
+.dei-10 {
+  background-image: url('../img/activity/a12.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-11 { top: 200px;   left: 200px; }
+.dei-11 {
+  background-image: url('../img/activity/a13.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-12 { top: 200px;   left: 300px; }
+.dei-12 {
+  background-image: url('../img/activity/a14.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-13 { top: 300px;   left: 0;  }
+.dei-13 {
+  background-image: url('../img/activity/a21.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-14 { top: 300px;   left: 100px; }
+.dei-14 {
+  background-image: url('../img/activity/a22.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-15 { top: 300px;   left: 200px; }
+.dei-15 {
+  background-image: url('../img/activity/a23.png');
+  background-size: cover;
+  background-position: center;
+}
+.dei-16 { top: 300px;   left: 300px; }
+.dei-16 {
+  background-image: url('../img/activity/a24.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 3. Images Keyframe
+--------------------------------------- */
+.raw-page {
+  position: fixed;
+  width: 60%;
+  border: 1px solid rgba(0,0,0,.2);
+  background-clip: padding-box;
+}
+#mediumHomepage {
+  top: 90%;
+  right: 5%;
+}
+.iphone {
+  position: fixed;
+  right: 40%;
+  top: 95%;
+  width: 12%;
+}
+.iphone-frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  z-index: 2;
+}
+.iphone-viewport {
+  width: 83.5%;
+  height: 69.5%;
+  position: absolute;
+  top: 14%; 
+  left: 8%;
+  overflow: hidden;
+  background-color: #000;
+}
+.iphone-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#medium-profile-iphone {
+  z-index: 2;
+}
+/* wsj
+--------------------------------------- */
+#wsj{
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+.wsj-byline{
+  position: fixed;
+  top: 63%;
+  left: 10%;
+  color: white;
+  max-width: 30%;
+  opacity: 0;
+}
+#wsjpic{
+  position: fixed;
+  right: 5%;
+  top: 105%;
+  width: 50%;
+}
+/* 3. Links Keyframe
+--------------------------------------- */
+#links {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+.links-byline {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  border-color: #fff;
+}
+.mainbtn{
+  margin-top: 50px;
+}
+.twitter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+/* 4.Subscription page
+----------------------------------------*/
+.container-second {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.sub-bg{
+  background-color: #F9F8F6;
+  width: 100%;
+  height: 100%;
+}
+.plans-byline{
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #2bb6c9;
+  width: 30%;
+  opacity: 0;
+  font-weight: 800;
+}
+#plan1{
+  position: fixed;
+  left: 15%;
+  top: 115%;
+  max-width: 40%;
+}
+#plan2{
+  position: fixed;
+  right: 15%;
+  top: 115%;
+  max-width: 40%;
+}
+@media all and (max-width: 600px) {
+  #intro{
+    top:40%;
+  }
+  .subtitle{
+    font-size: 30px;
+  }
+  .explosion-byline{
+    top:30%;
+    max-width: 80%;
+  }
+  .images-byline{
+    top:30%;
+    max-width: 80%;
+  }
+  .wsj-byline{
+    top:30%;
+    max-width: 80%;
+  }
+  .raw-page{
+    width: 90%;
+  }
+  #mediumHomepage{
+    top:120%;
+  }
+  .iphone{
+    top:110%;
+    right: 35%;
+    width: 20%;
+  }
+  #wsjpic{
+    right: 10%;
+    top: 120%;
+    width: 90%;
+  }
+  #domExplosionList {
+  position: fixed;
+  width: 65%;
+  top: 100%;
+  }
+  .dom-explosion-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+  }
+  .dei-1  { top: 0;   left: 0;  }
+  .dei-2  { top: 0;   left: 70px; }
+  .dei-3  { top: 0;   left: 140px; }
+  .dei-4  { top: 0;   left: 210px; }
+  .dei-5  { top: 70px;   left: 0;  }
+  .dei-6  { top: 70px;   left: 70px; }
+  .dei-7  { top: 70px;   left: 140px; }
+  .dei-8  { top: 70px;   left: 210px; }
+  .dei-9  { top: 140px;   left: 0;  }
+  .dei-10 { top: 140px;   left: 70px; }
+  .dei-11 { top: 140px;   left: 140px; }
+  .dei-12 { top: 140px;   left: 210px; }
+  .dei-13 { top: 210px;   left: 0;  }
+  .dei-14 { top: 210px;   left: 70px; }
+  .dei-15 { top: 210px;   left: 140px; }
+  .dei-16 { top: 210px;   left: 210px; }
+
+  .plans-byline{
+  position: fixed;
+  top: 35%;
+  left: 20%;
+  text-align: center;
+  letter-spacing: 10px;
+  width: 60%;
+  opacity: 0;
+  scale: .3;
+  }
+  #plan1{
+  position: fixed;
+  left: 15%;
+  top: 115%;
+  max-width: 70%;
+  }
+  #plan2{
+  position: fixed;
+  left: 15%;
+  top: 300%;
+  max-width: 70%;
+  }
+}

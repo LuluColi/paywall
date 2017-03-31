@@ -1,23 +1,17 @@
 {
   "name": "paywall",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+    "author": "",
+  "license": "ISC",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-rsync": "0.0.7",
+    "gulp-rsync": "0.0.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LuluColi/paywall.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LuluColi/paywall/issues"
-  },
-  "homepage": "https://github.com/LuluColi/paywall#readme"
+  }
 }
