@@ -2,6 +2,9 @@ body {
   background: #111;
   font-weight: 300;
 }
+h1 {
+  text-align: center;
+}
 .background {
   position: fixed;
   width: 100%;
@@ -12,7 +15,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 .background:after {
-  content: '';
+  content: 'Initium Membership';
   position: fixed;
   top: 10px;
   right: 10px;
@@ -226,31 +229,113 @@ body {
   top: 20px;
   right: 20px;
 }
-
-/* 4. Handling resize and small devices
---------------------------------------- */
-.error {
-  display: none;
+/* 4.Subscription page
+----------------------------------------*/
+.container-second {
   position: fixed;
-  width: 80%;
-  font-size: 30px;
-  font-weight: 300;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.sub-bg{
+  background-color: #F9F8F6;
+  width: 100%;
+  height: 100%;
+}
+.plans-byline{
+  position: fixed;
+  top: 35%;
+  left: 35%;
   text-align: center;
-  top: 30%;
-  left: 10%;
+  letter-spacing: 10px;
+  color: #2bb6c9;
+  width: 30%;
+  opacity: 0;
+  font-weight: 800;
 }
-.page-error .error {
-  display: block;
+#plan1{
+  position: fixed;
+  left: 15%;
+  top: 115%;
+  max-width: 40%;
 }
-.page-error .container {
-  display: none;
+#plan2{
+  position: fixed;
+  right: 15%;
+  top: 115%;
+  max-width: 40%;
 }
-@media all and (max-width: 800px) {
-  .container {
-    display: none;
+@media all and (max-width: 600px) {
+  #intro{
+    top:40%;
   }
-  .error {
-    display: block;
-    font-size: 22px;
+  .subtitle{
+    font-size: 30px;
   }
+  .explosion-byline{
+    top:30%;
+    max-width: 80%;
+  }
+  .images-byline{
+    top:30%;
+    max-width: 80%;
+  }
+  .wsj-byline{
+    top:30%;
+    max-width: 80%;
+  }
+  .raw-page{
+    width: 90%;
+  }
+  #mediumHomepage{
+    top:120%;
+  }
+  .iphone{
+    top:110%;
+    right: 35%;
+    width: 20%;
+  }
+  #wsjpic{
+    right: 10%;
+    top: 120%;
+    width: 90%;
+  }
+  #domExplosionList {
+  position: fixed;
+  width: 65%;
+  top: 100%;
+  }
+  .dom-explosion-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+  }
+  .dei-1  { top: 0;   left: 0;  }
+  .dei-2  { top: 0;   left: 70px; }
+  .dei-3  { top: 0;   left: 140px; }
+  .dei-4  { top: 0;   left: 210px; }
+  .dei-5  { top: 70px;   left: 0;  }
+  .dei-6  { top: 70px;   left: 70px; }
+  .dei-7  { top: 70px;   left: 140px; }
+  .dei-8  { top: 70px;   left: 210px; }
+  .dei-9  { top: 140px;   left: 0;  }
+  .dei-10 { top: 140px;   left: 70px; }
+  .dei-11 { top: 140px;   left: 140px; }
+  .dei-12 { top: 140px;   left: 210px; }
+  .dei-13 { top: 210px;   left: 0;  }
+  .dei-14 { top: 210px;   left: 70px; }
+  .dei-15 { top: 210px;   left: 140px; }
+  .dei-16 { top: 210px;   left: 210px; }
+
+  .plans-byline{
+  position: fixed;
+  top: 35%;
+  left: 30%;
+  text-align: center;
+  letter-spacing: 10px;
+  width: 40%;
+  opacity: 0;
+  scale: .3;
+}
 }

@@ -263,26 +263,42 @@
                 'selector'    : '.wsj-byline',
                 'translateY'  : ['-25%', '-25%'],
                 'scale'       : .7,
-                'opacity'     : [1.75, -.75]
+                'opacity'     : [1.75, 0]
               } , {
                 'selector'    : '#wsjpic',
                 'translateY'  : ['-90%', '-90%'],
                 'scale'       : .8,
-                'opacity'     : -.75
+                'opacity'     : 0
               } 
             ]
           } , {
-            'wrapper' : '#links',
-            'duration' : '100%',
+            'wrapper' : '#subscription',
+            'duration' : '75%',
+            'animations' :  [
+            ]
+          } , {
+            'wrapper' : '#subscription',
+            'duration' : '150%',
             'animations' :  [
               {
-                'selector'    : '#links',
-                'opacity'     : [0, 2],
-                'scale'       : [.8, 1]
+                'selector'    : '.sub-bg',
+                'opacity'     : [0, 1.75]
               } , {
-                'selector'    : '.twitter',
-                'opacity'     : [0, 1]
-              }
+                'selector'    : '.plans-byline',
+                'translateY'  : ['-25%', '-25%'],
+                'scale'       : [.3, 1],
+                'opacity'     : [-.75, 1.75]
+              } , {
+                'selector'    : '#plan1',
+                'translateY'  : ['-90%', '-90%'],
+                'scale'       : 1,
+                'opacity'     : [-.75, 1.75]
+              } , {
+                'selector'    : '#plan2',
+                'translateY'  : ['-90%', '-90%'],
+                'scale'       : 1,
+                'opacity'     : [-.75, 1.75]
+              }  
             ]
           } , {
             'duration' : '100%',
